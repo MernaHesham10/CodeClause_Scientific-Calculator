@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ScientificCalculator;
+package bd.edu.vu.scientificcalculator;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
+
+import java.awt.*;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
-
 public class CalculatorUI extends javax.swing.JFrame {
 
     private int n;
@@ -31,7 +32,6 @@ public class CalculatorUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         outputBox = new javax.swing.JTextArea();
         addButton = new javax.swing.JButton();
@@ -68,76 +68,82 @@ public class CalculatorUI extends javax.swing.JFrame {
         twopxButton = new javax.swing.JButton();
         tenpxButton = new javax.swing.JButton();
         npieButton = new javax.swing.JButton();
-        Name = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Scientific Calculator");
-        setBackground(new java.awt.Color(0, 0, 0));
+        getContentPane().setBackground(Color.lightGray);
         setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        setPreferredSize(new java.awt.Dimension(440, 455));
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setForeground(new java.awt.Color(102, 102, 102));
 
         outputBox.setEditable(false);
         outputBox.setColumns(20);
-        outputBox.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        outputBox.setFont(new java.awt.Font("Kristen ITC", 1, 18)); // NOI18N
         outputBox.setForeground(new java.awt.Color(102, 102, 102));
         outputBox.setRows(1);
         outputBox.setAutoscrolls(false);
-        outputBox.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        outputBox.setBorder(null);
         outputBox.setCaretColor(new java.awt.Color(255, 255, 255));
         jScrollPane1.setViewportView(outputBox);
 
-        addButton.setBackground(new java.awt.Color(102, 102, 102));
-        addButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        addButton.setForeground(new java.awt.Color(255, 255, 255));
+        addButton.setBackground(new java.awt.Color(255, 255, 255));
+        addButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        addButton.setForeground(new java.awt.Color(102, 102, 102));
         addButton.setText("+");
+        addButton.setBorder(null);
         addButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addButtonActionPerformed(evt);
             }
         });
 
-        firstInput.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        firstInput.setForeground(new java.awt.Color(153, 153, 153));
-        firstInput.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        firstInput.setFont(new java.awt.Font("Kristen ITC", 1, 18)); // NOI18N
+        firstInput.setForeground(new java.awt.Color(102, 102, 102));
+        firstInput.setBorder(null);
         firstInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 firstInputActionPerformed(evt);
             }
         });
 
-        secondInput.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        secondInput.setForeground(new java.awt.Color(153, 153, 153));
-        secondInput.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        secondInput.setFont(new java.awt.Font("Kristen ITC", 1, 18)); // NOI18N
+        secondInput.setForeground(new java.awt.Color(102, 102, 102));
+        secondInput.setBorder(null);
         secondInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 secondInputActionPerformed(evt);
             }
         });
 
-        subButton.setBackground(new java.awt.Color(102, 102, 102));
-        subButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        subButton.setForeground(new java.awt.Color(255, 255, 255));
+        subButton.setBackground(new java.awt.Color(255, 255, 255));
+        subButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        subButton.setForeground(new java.awt.Color(102, 102, 102));
         subButton.setText("-");
+        subButton.setBorder(null);
         subButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 subButtonActionPerformed(evt);
             }
         });
 
-        mulButton.setBackground(new java.awt.Color(102, 102, 102));
-        mulButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        mulButton.setForeground(new java.awt.Color(255, 255, 255));
+        mulButton.setBackground(new java.awt.Color(255, 255, 255));
+        mulButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        mulButton.setForeground(new java.awt.Color(102, 102, 102));
         mulButton.setText("*");
+        mulButton.setBorder(null);
         mulButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mulButtonActionPerformed(evt);
             }
         });
 
-        jButton9.setBackground(new java.awt.Color(102, 102, 102));
-        jButton9.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setBackground(new java.awt.Color(255, 255, 255));
+        jButton9.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(102, 102, 102));
         jButton9.setText("/");
+        jButton9.setBorder(null);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -145,382 +151,404 @@ public class CalculatorUI extends javax.swing.JFrame {
         });
 
         clearButton.setBackground(new java.awt.Color(255, 204, 204));
-        clearButton.setFont(new java.awt.Font("Roboto Light", 0, 14)); // NOI18N
+        clearButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
         clearButton.setText("Clear");
+        clearButton.setBorder(null);
         clearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clearButtonActionPerformed(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel2.setText("1st");
+        jLabel2.setFont(new java.awt.Font("Kristen ITC", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("First Number");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel3.setText("2nd");
+        jLabel3.setFont(new java.awt.Font("Kristen ITC", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Result");
 
-        ncrButton.setBackground(new java.awt.Color(102, 102, 102));
-        ncrButton.setFont(new java.awt.Font("Roboto Light", 0, 16)); // NOI18N
-        ncrButton.setForeground(new java.awt.Color(255, 255, 255));
+        ncrButton.setBackground(new java.awt.Color(255, 255, 255));
+        ncrButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        ncrButton.setForeground(new java.awt.Color(102, 102, 102));
         ncrButton.setText("nCr");
+        ncrButton.setBorder(null);
         ncrButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ncrButtonActionPerformed(evt);
             }
         });
 
-        modButton.setBackground(new java.awt.Color(102, 102, 102));
-        modButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        modButton.setForeground(new java.awt.Color(255, 255, 255));
+        modButton.setBackground(new java.awt.Color(255, 255, 255));
+        modButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        modButton.setForeground(new java.awt.Color(102, 102, 102));
         modButton.setText("%");
+        modButton.setBorder(null);
         modButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 modButtonActionPerformed(evt);
             }
         });
 
-        sinButton.setBackground(new java.awt.Color(102, 102, 102));
-        sinButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        sinButton.setForeground(new java.awt.Color(255, 255, 255));
+        sinButton.setBackground(new java.awt.Color(255, 255, 255));
+        sinButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        sinButton.setForeground(new java.awt.Color(102, 102, 102));
         sinButton.setText("sin");
+        sinButton.setBorder(null);
         sinButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sinButtonActionPerformed(evt);
             }
         });
 
-        cosButton.setBackground(new java.awt.Color(102, 102, 102));
-        cosButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        cosButton.setForeground(new java.awt.Color(255, 255, 255));
+        cosButton.setBackground(new java.awt.Color(255, 255, 255));
+        cosButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        cosButton.setForeground(new java.awt.Color(102, 102, 102));
         cosButton.setText("cos");
+        cosButton.setBorder(null);
         cosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cosButtonActionPerformed(evt);
             }
         });
 
-        tanButton.setBackground(new java.awt.Color(102, 102, 102));
-        tanButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        tanButton.setForeground(new java.awt.Color(255, 255, 255));
+        tanButton.setBackground(new java.awt.Color(255, 255, 255));
+        tanButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        tanButton.setForeground(new java.awt.Color(102, 102, 102));
         tanButton.setText("tan");
+        tanButton.setBorder(null);
         tanButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tanButtonActionPerformed(evt);
             }
         });
 
-        cotButton.setBackground(new java.awt.Color(102, 102, 102));
-        cotButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        cotButton.setForeground(new java.awt.Color(255, 255, 255));
+        cotButton.setBackground(new java.awt.Color(255, 255, 255));
+        cotButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        cotButton.setForeground(new java.awt.Color(102, 102, 102));
         cotButton.setText("cot");
+        cotButton.setBorder(null);
         cotButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cotButtonActionPerformed(evt);
             }
         });
 
-        cosecButton.setBackground(new java.awt.Color(102, 102, 102));
-        cosecButton.setFont(new java.awt.Font("Roboto Light", 0, 16)); // NOI18N
-        cosecButton.setForeground(new java.awt.Color(255, 255, 255));
+        cosecButton.setBackground(new java.awt.Color(255, 255, 255));
+        cosecButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        cosecButton.setForeground(new java.awt.Color(102, 102, 102));
         cosecButton.setText("cosec");
+        cosecButton.setBorder(null);
         cosecButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cosecButtonActionPerformed(evt);
             }
         });
 
-        secButton.setBackground(new java.awt.Color(102, 102, 102));
-        secButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        secButton.setForeground(new java.awt.Color(255, 255, 255));
+        secButton.setBackground(new java.awt.Color(255, 255, 255));
+        secButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        secButton.setForeground(new java.awt.Color(102, 102, 102));
         secButton.setText("sec");
+        secButton.setBorder(null);
         secButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 secButtonActionPerformed(evt);
             }
         });
 
-        nprButton.setBackground(new java.awt.Color(102, 102, 102));
-        nprButton.setFont(new java.awt.Font("Roboto Light", 0, 16)); // NOI18N
-        nprButton.setForeground(new java.awt.Color(255, 255, 255));
+        nprButton.setBackground(new java.awt.Color(255, 255, 255));
+        nprButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        nprButton.setForeground(new java.awt.Color(102, 102, 102));
         nprButton.setText("nPr");
+        nprButton.setBorder(null);
         nprButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nprButtonActionPerformed(evt);
             }
         });
 
-        factorialButton.setBackground(new java.awt.Color(102, 102, 102));
-        factorialButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        factorialButton.setForeground(new java.awt.Color(255, 255, 255));
+        factorialButton.setBackground(new java.awt.Color(255, 255, 255));
+        factorialButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        factorialButton.setForeground(new java.awt.Color(102, 102, 102));
         factorialButton.setText("n!");
+        factorialButton.setBorder(null);
         factorialButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 factorialButtonActionPerformed(evt);
             }
         });
 
-        xp3Button.setBackground(new java.awt.Color(102, 102, 102));
-        xp3Button.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        xp3Button.setForeground(new java.awt.Color(255, 255, 255));
+        xp3Button.setBackground(new java.awt.Color(255, 255, 255));
+        xp3Button.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        xp3Button.setForeground(new java.awt.Color(102, 102, 102));
         xp3Button.setText("x^3");
+        xp3Button.setBorder(null);
         xp3Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 xp3ButtonActionPerformed(evt);
             }
         });
 
-        xp2Button.setBackground(new java.awt.Color(102, 102, 102));
-        xp2Button.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        xp2Button.setForeground(new java.awt.Color(255, 255, 255));
+        xp2Button.setBackground(new java.awt.Color(255, 255, 255));
+        xp2Button.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        xp2Button.setForeground(new java.awt.Color(102, 102, 102));
         xp2Button.setText("x^2");
+        xp2Button.setBorder(null);
         xp2Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 xp2ButtonActionPerformed(evt);
             }
         });
 
-        xpyButton.setBackground(new java.awt.Color(102, 102, 102));
-        xpyButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        xpyButton.setForeground(new java.awt.Color(255, 255, 255));
+        xpyButton.setBackground(new java.awt.Color(255, 255, 255));
+        xpyButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        xpyButton.setForeground(new java.awt.Color(102, 102, 102));
         xpyButton.setText("x^y");
+        xpyButton.setBorder(null);
         xpyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 xpyButtonActionPerformed(evt);
             }
         });
 
-        xp1invButton.setBackground(new java.awt.Color(102, 102, 102));
-        xp1invButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        xp1invButton.setForeground(new java.awt.Color(255, 255, 255));
+        xp1invButton.setBackground(new java.awt.Color(255, 255, 255));
+        xp1invButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        xp1invButton.setForeground(new java.awt.Color(102, 102, 102));
         xp1invButton.setText("x^-1");
+        xp1invButton.setBorder(null);
         xp1invButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 xp1invButtonActionPerformed(evt);
             }
         });
 
-        rootButton.setBackground(new java.awt.Color(102, 102, 102));
-        rootButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        rootButton.setForeground(new java.awt.Color(255, 255, 255));
+        rootButton.setBackground(new java.awt.Color(255, 255, 255));
+        rootButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        rootButton.setForeground(new java.awt.Color(102, 102, 102));
         rootButton.setText("√");
+        rootButton.setBorder(null);
         rootButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rootButtonActionPerformed(evt);
             }
         });
 
-        epxButton.setBackground(new java.awt.Color(102, 102, 102));
-        epxButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        epxButton.setForeground(new java.awt.Color(255, 255, 255));
+        epxButton.setBackground(new java.awt.Color(255, 255, 255));
+        epxButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        epxButton.setForeground(new java.awt.Color(102, 102, 102));
         epxButton.setText("e^x");
+        epxButton.setBorder(null);
         epxButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 epxButtonActionPerformed(evt);
             }
         });
 
-        lnButton.setBackground(new java.awt.Color(102, 102, 102));
-        lnButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        lnButton.setForeground(new java.awt.Color(255, 255, 255));
+        lnButton.setBackground(new java.awt.Color(255, 255, 255));
+        lnButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        lnButton.setForeground(new java.awt.Color(102, 102, 102));
         lnButton.setText("ln");
+        lnButton.setBorder(null);
         lnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lnButtonActionPerformed(evt);
             }
         });
 
-        eButton.setBackground(new java.awt.Color(102, 102, 102));
-        eButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        eButton.setForeground(new java.awt.Color(255, 255, 255));
+        eButton.setBackground(new java.awt.Color(255, 255, 255));
+        eButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        eButton.setForeground(new java.awt.Color(102, 102, 102));
         eButton.setText("e");
+        eButton.setBorder(null);
         eButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eButtonActionPerformed(evt);
             }
         });
 
-        logButton.setBackground(new java.awt.Color(102, 102, 102));
-        logButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        logButton.setForeground(new java.awt.Color(255, 255, 255));
+        logButton.setBackground(new java.awt.Color(255, 255, 255));
+        logButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        logButton.setForeground(new java.awt.Color(102, 102, 102));
         logButton.setText("log");
+        logButton.setBorder(null);
         logButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logButtonActionPerformed(evt);
             }
         });
 
-        absButton.setBackground(new java.awt.Color(102, 102, 102));
-        absButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        absButton.setForeground(new java.awt.Color(255, 255, 255));
+        absButton.setBackground(new java.awt.Color(255, 255, 255));
+        absButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        absButton.setForeground(new java.awt.Color(102, 102, 102));
         absButton.setText("|x|");
+        absButton.setBorder(null);
         absButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 absButtonActionPerformed(evt);
             }
         });
 
-        exitButton.setBackground(new java.awt.Color(102, 102, 102));
-        exitButton.setFont(new java.awt.Font("Roboto Light", 0, 14)); // NOI18N
-        exitButton.setForeground(new java.awt.Color(255, 255, 255));
+        exitButton.setBackground(new java.awt.Color(255, 255, 255));
+        exitButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        exitButton.setForeground(new java.awt.Color(102, 102, 102));
         exitButton.setText("Exit");
+        exitButton.setBorder(null);
         exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitButtonActionPerformed(evt);
             }
         });
 
-        pieButton.setBackground(new java.awt.Color(102, 102, 102));
-        pieButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        pieButton.setForeground(new java.awt.Color(255, 255, 255));
+        pieButton.setBackground(new java.awt.Color(255, 255, 255));
+        pieButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        pieButton.setForeground(new java.awt.Color(102, 102, 102));
         pieButton.setText("π");
+        pieButton.setBorder(null);
         pieButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pieButtonActionPerformed(evt);
             }
         });
 
-        twopxButton.setBackground(new java.awt.Color(102, 102, 102));
-        twopxButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        twopxButton.setForeground(new java.awt.Color(255, 255, 255));
+        twopxButton.setBackground(new java.awt.Color(255, 255, 255));
+        twopxButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        twopxButton.setForeground(new java.awt.Color(102, 102, 102));
         twopxButton.setText("2^x");
+        twopxButton.setBorder(null);
         twopxButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 twopxButtonActionPerformed(evt);
             }
         });
 
-        tenpxButton.setBackground(new java.awt.Color(102, 102, 102));
-        tenpxButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        tenpxButton.setForeground(new java.awt.Color(255, 255, 255));
+        tenpxButton.setBackground(new java.awt.Color(255, 255, 255));
+        tenpxButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        tenpxButton.setForeground(new java.awt.Color(102, 102, 102));
         tenpxButton.setText("10^x");
+        tenpxButton.setBorder(null);
         tenpxButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tenpxButtonActionPerformed(evt);
             }
         });
 
-        npieButton.setBackground(new java.awt.Color(102, 102, 102));
-        npieButton.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        npieButton.setForeground(new java.awt.Color(255, 255, 255));
+        npieButton.setBackground(new java.awt.Color(255, 255, 255));
+        npieButton.setFont(new java.awt.Font("Kristen ITC", 0, 18)); // NOI18N
+        npieButton.setForeground(new java.awt.Color(102, 102, 102));
         npieButton.setText("nπ");
+        npieButton.setBorder(null);
         npieButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 npieButtonActionPerformed(evt);
             }
         });
 
-        Name.setBackground(new java.awt.Color(204, 204, 204));
-        Name.setFont(new java.awt.Font("Bahnschrift", 0, 20)); // NOI18N
-        Name.setForeground(new java.awt.Color(153, 153, 153));
-        Name.setText("Scientific Calculator");
+        jLabel4.setFont(new java.awt.Font("Kristen ITC", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Second Number");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(firstInput)
+                    .addComponent(secondInput, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(86, 86, 86))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(secondInput, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
-                            .addComponent(firstInput))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addComponent(Name))))
+                        .addComponent(modButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(sinButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(cosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(tanButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(ncrButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(subButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(mulButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(modButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(sinButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(cosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(tanButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(ncrButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(factorialButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(cosecButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(secButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(cotButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(nprButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(rootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(xp2Button, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(xp3Button, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(xpyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(xp1invButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(eButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(epxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(logButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(lnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(absButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(pieButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(npieButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(twopxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(6, 6, 6)
-                                .addComponent(tenpxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(exitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(factorialButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(cosecButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(secButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(cotButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(nprButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(rootButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(xp2Button, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(xp3Button, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(xpyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(xp1invButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(eButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(epxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(logButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(lnButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(absButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(pieButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(npieButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(twopxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(tenpxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(exitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(subButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(mulButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(11, 11, 11)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(firstInput, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(secondInput, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(firstInput, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Name))
-                        .addGap(6, 6, 6)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(secondInput, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))))
-                .addGap(25, 25, 25)
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabel3)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(subButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -570,25 +598,79 @@ public class CalculatorUI extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(tenpxButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(exitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void secButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secButtonActionPerformed
-        double degrees = 0;
+    private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
+        firstInput.setText(null);
+        secondInput.setText(null);
+        outputBox.setText(null);
+    }//GEN-LAST:event_clearButtonActionPerformed
+
+    private void firstInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_firstInputActionPerformed
+
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
+        double num1 = 0, num2 = 0;
+        try{
+            num1 = Double.parseDouble(firstInput.getText());
+            num2 = Double.parseDouble(secondInput.getText());
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = num1 + num2;
+        outputBox.setText("    " + result);
+    }//GEN-LAST:event_addButtonActionPerformed
+
+    private void rootButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rootButtonActionPerformed
+        double number = 0;
         DecimalFormat df = new DecimalFormat("#.########");
         try{
-            degrees = Double.parseDouble(firstInput.getText());
+            number = Double.parseDouble(firstInput.getText());
             secondInput.setText(null);
         }
         catch(NumberFormatException e){
             JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
         }
-        double result = 1.0 / Math.cos(Math.toRadians(degrees));
+        double result = sqrt(number);
         outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_secButtonActionPerformed
+    }//GEN-LAST:event_rootButtonActionPerformed
+
+    private void pieButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pieButtonActionPerformed
+        double pie = 3.141592653589793;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            firstInput.setText(null);
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        outputBox.setText("    " + df.format(pie));
+    }//GEN-LAST:event_pieButtonActionPerformed
+
+    private void secondInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_secondInputActionPerformed
+
+    private void epxButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epxButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.exp(number);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_epxButtonActionPerformed
 
     private void eButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eButtonActionPerformed
         double exp = 2.7182818284590452;
@@ -604,19 +686,6 @@ public class CalculatorUI extends javax.swing.JFrame {
         outputBox.setText("    " + df.format(result));
     }//GEN-LAST:event_eButtonActionPerformed
 
-    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
-        double num1 = 0, num2 = 0;
-        try{
-            num1 = Double.parseDouble(firstInput.getText());
-            num2 = Double.parseDouble(secondInput.getText());
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = num1 + num2;
-        outputBox.setText("    " + result);
-    }//GEN-LAST:event_addButtonActionPerformed
-
     private void subButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subButtonActionPerformed
         double num1 = 0, num2 = 0;
         try{
@@ -630,13 +699,163 @@ public class CalculatorUI extends javax.swing.JFrame {
         outputBox.setText("    " + result);
     }//GEN-LAST:event_subButtonActionPerformed
 
-    private void secondInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_secondInputActionPerformed
+    private void absButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_absButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.abs(number);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_absButtonActionPerformed
 
-    private void firstInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstInputActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_firstInputActionPerformed
+    private void cotButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cotButtonActionPerformed
+        double degrees = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            degrees = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = 1.0 / Math.tan(Math.toRadians(degrees));
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_cotButtonActionPerformed
+
+    private void sinButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinButtonActionPerformed
+        double degrees = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            degrees = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.sin(Math.toRadians(degrees));
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_sinButtonActionPerformed
+
+    private void lnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.log(number);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_lnButtonActionPerformed
+
+    private void cosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosButtonActionPerformed
+        double degrees = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            degrees = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.cos(Math.toRadians(degrees));
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_cosButtonActionPerformed
+
+    private void xp1invButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xp1invButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.pow(number,-1);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_xp1invButtonActionPerformed
+
+    private void factorialButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_factorialButtonActionPerformed
+        int fact=1;
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        for(int i=1;i<=number;i++){
+            fact=fact*i;
+        }
+        double result = fact;
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_factorialButtonActionPerformed
+
+    private void xp2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xp2ButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = pow(number,2);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_xp2ButtonActionPerformed
+
+    private void xp3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xp3ButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = pow(number,3);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_xp3ButtonActionPerformed
+
+    private void xpyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xpyButtonActionPerformed
+        double num1 = 0, num2=0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            num1 = Double.parseDouble(firstInput.getText());
+            num2 = Double.parseDouble(secondInput.getText());
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = pow(num1,num2);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_xpyButtonActionPerformed
+
+    private void twopxButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_twopxButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.pow(2,number);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_twopxButtonActionPerformed
 
     private void mulButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mulButtonActionPerformed
         double num1 = 0, num2 = 0;
@@ -651,6 +870,68 @@ public class CalculatorUI extends javax.swing.JFrame {
         outputBox.setText("    " + result);
     }//GEN-LAST:event_mulButtonActionPerformed
 
+    private void tenpxButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tenpxButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.pow(10,number);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_tenpxButtonActionPerformed
+
+    private void nprButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nprButtonActionPerformed
+        long n = 1, r = 1;
+        try{
+            n = Integer.parseInt(firstInput.getText());
+            r = Integer.parseInt(secondInput.getText());
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        long x = 1, y =  1, z = n - r;
+        for (int i = 1; i <= n; i++){
+            x = x * i;
+        }
+        for (int i = 1; i <= z; i++){
+            y = y * i;
+        }
+        long result = x / y;
+        outputBox.setText("    " + result);
+    }//GEN-LAST:event_nprButtonActionPerformed
+
+    private void tanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tanButtonActionPerformed
+        double degrees = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            degrees = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.tan(Math.toRadians(degrees));
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_tanButtonActionPerformed
+
+    private void npieButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_npieButtonActionPerformed
+        double number = 0, pie = 3.141592653589793;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = number * pie;
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_npieButtonActionPerformed
+
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         int num1 = 0, num2 = 0;
         DecimalFormat df = new DecimalFormat("#.########");
@@ -664,6 +945,61 @@ public class CalculatorUI extends javax.swing.JFrame {
         double result = (double) num1 / (double) num2;
         outputBox.setText("    " + df.format(result));
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_exitButtonActionPerformed
+
+    private void ncrButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ncrButtonActionPerformed
+        long n = 1, r = 1;
+        try{
+            n = Integer.parseInt(firstInput.getText());
+            r = Integer.parseInt(secondInput.getText());
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        long x1 = 1, x2 = 1, y =  1, z = n - r;
+        for (int i = 1; i <= n; i++){
+            x1 = x1 * i;
+        }
+        for (int i = 1; i <= r; i++){
+            x2 = x2 * i;
+        }
+        for (int i = 1; i <= z; i++){
+            y = y * i;
+        }
+        long result =  x1 / (x2 * y);
+        outputBox.setText("    " + result);
+    }//GEN-LAST:event_ncrButtonActionPerformed
+
+    private void logButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logButtonActionPerformed
+        double number = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            number = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = Math.log10(number);
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_logButtonActionPerformed
+
+    private void secButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secButtonActionPerformed
+        double degrees = 0;
+        DecimalFormat df = new DecimalFormat("#.########");
+        try{
+            degrees = Double.parseDouble(firstInput.getText());
+            secondInput.setText(null);
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
+        }
+        double result = 1.0 / Math.cos(Math.toRadians(degrees));
+        outputBox.setText("    " + df.format(result));
+    }//GEN-LAST:event_secButtonActionPerformed
 
     private void modButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modButtonActionPerformed
         int num1 = 0, num2 = 0;
@@ -685,58 +1021,6 @@ public class CalculatorUI extends javax.swing.JFrame {
         outputBox.setText("    " + result);
     }//GEN-LAST:event_modButtonActionPerformed
 
-    private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
-        firstInput.setText(null);
-        secondInput.setText(null);
-        outputBox.setText(null);
-    }//GEN-LAST:event_clearButtonActionPerformed
-
-    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
-        setVisible(false);
-    }//GEN-LAST:event_exitButtonActionPerformed
-
-    private void sinButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinButtonActionPerformed
-        double degrees = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            degrees = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.sin(Math.toRadians(degrees));
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_sinButtonActionPerformed
-
-    private void cosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosButtonActionPerformed
-        double degrees = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            degrees = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.cos(Math.toRadians(degrees));
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_cosButtonActionPerformed
-
-    private void tanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tanButtonActionPerformed
-        double degrees = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            degrees = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.tan(Math.toRadians(degrees));
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_tanButtonActionPerformed
-
     private void cosecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosecButtonActionPerformed
         double degrees = 0;
         DecimalFormat df = new DecimalFormat("#.########");
@@ -750,263 +1034,7 @@ public class CalculatorUI extends javax.swing.JFrame {
         double result = 1.0 / Math.sin(Math.toRadians(degrees));
         outputBox.setText("    " + df.format(result));
     }//GEN-LAST:event_cosecButtonActionPerformed
-
-    private void cotButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cotButtonActionPerformed
-        double degrees = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            degrees = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = 1.0 / Math.tan(Math.toRadians(degrees));
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_cotButtonActionPerformed
-
-    private void rootButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rootButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = sqrt(number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_rootButtonActionPerformed
-
-    private void xp2ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xp2ButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = pow(number,2);
-        outputBox.setText("    " + df.format(result));  
-    }//GEN-LAST:event_xp2ButtonActionPerformed
-
-    private void xp3ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xp3ButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = pow(number,3);
-        outputBox.setText("    " + df.format(result));  
-    }//GEN-LAST:event_xp3ButtonActionPerformed
-
-    private void xpyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xpyButtonActionPerformed
-        double num1 = 0, num2=0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            num1 = Double.parseDouble(firstInput.getText());
-            num2 = Double.parseDouble(secondInput.getText());
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = pow(num1,num2);
-        outputBox.setText("    " + df.format(result));  
-    }//GEN-LAST:event_xpyButtonActionPerformed
-
-    private void xp1invButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xp1invButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.pow(number,-1);
-        outputBox.setText("    " + df.format(result));  
-    }//GEN-LAST:event_xp1invButtonActionPerformed
-
-    private void pieButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pieButtonActionPerformed
-        double pie = 3.141592653589793;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            firstInput.setText(null);
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        outputBox.setText("    " + df.format(pie));
-    }//GEN-LAST:event_pieButtonActionPerformed
-
-    private void npieButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_npieButtonActionPerformed
-        double number = 0, pie = 3.141592653589793;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = number * pie;
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_npieButtonActionPerformed
-
-    private void epxButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_epxButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.exp(number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_epxButtonActionPerformed
-
-    private void twopxButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_twopxButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.pow(2,number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_twopxButtonActionPerformed
-
-    private void tenpxButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tenpxButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.pow(10,number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_tenpxButtonActionPerformed
-
-    private void logButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.log10(number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_logButtonActionPerformed
-
-    private void lnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.log(number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_lnButtonActionPerformed
-
-    private void absButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_absButtonActionPerformed
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        double result = Math.abs(number);
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_absButtonActionPerformed
-
-    private void factorialButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_factorialButtonActionPerformed
-        int fact=1;
-        double number = 0;
-        DecimalFormat df = new DecimalFormat("#.########");
-        try{
-            number = Double.parseDouble(firstInput.getText());
-            secondInput.setText(null);
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        for(int i=1;i<=number;i++){    
-            fact=fact*i;    
-        }
-        double result = fact;
-        outputBox.setText("    " + df.format(result));
-    }//GEN-LAST:event_factorialButtonActionPerformed
     
-    private void ncrButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ncrButtonActionPerformed
-        long n = 1, r = 1;
-        try{
-            n = Integer.parseInt(firstInput.getText());
-            r = Integer.parseInt(secondInput.getText());
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        long x1 = 1, x2 = 1, y =  1, z = n - r;
-        for (int i = 1; i <= n; i++){ 
-            x1 = x1 * i;
-        }
-        for (int i = 1; i <= r; i++){ 
-            x2 = x2 * i;
-        }
-        for (int i = 1; i <= z; i++){ 
-            y = y * i;
-        }
-        long result =  x1 / (x2 * y);
-        outputBox.setText("    " + result);
-    }//GEN-LAST:event_ncrButtonActionPerformed
-
-    private void nprButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nprButtonActionPerformed
-        long n = 1, r = 1;
-        try{
-            n = Integer.parseInt(firstInput.getText());
-            r = Integer.parseInt(secondInput.getText());
-        }
-        catch(NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "Invalid input! Put numerical value only.", "Error Message", JOptionPane.ERROR_MESSAGE);
-        }
-        long x = 1, y =  1, z = n - r;
-        for (int i = 1; i <= n; i++){ 
-            x = x * i;
-        }
-        for (int i = 1; i <= z; i++){ 
-            y = y * i;
-        }
-        long result = x / y;
-        outputBox.setText("    " + result);
-    }//GEN-LAST:event_nprButtonActionPerformed
-
     
     
     
@@ -1063,7 +1091,6 @@ public class CalculatorUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Name;
     private javax.swing.JButton absButton;
     private javax.swing.JButton addButton;
     private javax.swing.JButton clearButton;
@@ -1076,9 +1103,9 @@ public class CalculatorUI extends javax.swing.JFrame {
     private javax.swing.JButton factorialButton;
     private javax.swing.JTextField firstInput;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton lnButton;
     private javax.swing.JButton logButton;
